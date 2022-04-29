@@ -2,8 +2,8 @@ const axios = require('axios').default
 const fs = require('fs');
 
 const args = process.argv.slice(2);
-const status = args[0] == 'on' ? 1 : 2;
-const t = status == 1 ? 'ON' : 'OFF';
+const status = args[0] == 'on' ? 2 : 1;
+const t = status == 2 ? 'ON' : 'OFF';
 
 console.log('\x1b[36m%s\x1b[0m', `[INFO] Coffee Jelly Script ☕🍮`)
 console.log('\x1b[36m%s\x1b[0m', `[INFO] Turning ${t}`)
